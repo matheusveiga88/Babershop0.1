@@ -5,6 +5,7 @@ import java.util.Scanner;
 import model.Cliente;
 import model.Servicos;
 import model.Agendar;
+import model.Barbeiros;
 
 public class Menu {
 
@@ -13,6 +14,7 @@ public class Menu {
     Servicos servicos = new Servicos();
     Cliente cliente = new Cliente();
     Agendar agendar = new Agendar();
+    Barbeiros barbeiros = new Barbeiros();
 
     private int contadormenu = -1;
 
@@ -27,6 +29,7 @@ public class Menu {
             System.out.println("1- Serviços do Salão");
             System.out.println("2- Clientes Cadastrados");
             System.out.println("3- Agendar Cliente");
+            System.out.println("4- Afiliados Barbeiros");
             System.out.println("0- Sair do Programa");
             contadormenu = scanner.nextInt();
             scanner.nextLine();
@@ -37,9 +40,14 @@ public class Menu {
                     break;
                 case 2:
                     cliente.exibirCliente(scanner);
+                    cliente.exibirClienteComDesconto(10, true, 5);
                     break;
                 case 3:
                     agendar.agendarcliente(scanner);
+                    break;
+                case 4:
+                    barbeiros.exibirAfiliados("Reyzon Hugo Polaquine", "99-99999-9999", "Corte infantil");
+                    barbeiros.exibirdetalhesprofssionais(5, 3000.0, 1);
                     break;
                 case 0:
                     System.out.println("SAINDO...");

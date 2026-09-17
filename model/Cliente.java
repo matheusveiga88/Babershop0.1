@@ -1,32 +1,63 @@
 package model;
 import java.util.Scanner;
 
-public class Cliente {
-    private String nomeDoCliente;
-    private String numDoCliente;
+public class Cliente extends Pessoas {
+    private int desconto;
+    private boolean fidelidade;
+    private int quantidadeVisitas = 0;
 
-    public String getNomeDoCliente() {
-        return nomeDoCliente;
+    
+    public int getDesconto() {
+        return desconto;
     }
 
-    public void setNomeDoCliente(String nomeDoCliente) {
-        this.nomeDoCliente = nomeDoCliente;
+
+
+    public void setDesconto(int desconto) {
+        this.desconto = desconto;
     }
 
-    public String getNumDoCliente() {
-        return numDoCliente;
+
+
+    public boolean isFidelidade() {
+        return fidelidade;
     }
 
-    public void setNumDoCliente(String numDoCliente) {
-        this.numDoCliente = numDoCliente;
+
+
+    public void setFidelidade(boolean fidelidade) {
+        this.fidelidade = fidelidade;
     }
+
+
+
+    public int getQuantidadeVisitas() {
+        return quantidadeVisitas;
+    }
+
+
+
+    public void setQuantidadeVisitas(int quantidadeVisitas) {
+        this.quantidadeVisitas = quantidadeVisitas;
+    }
+
+
 
     public void exibirCliente(Scanner scanner) {
         System.out.print("Digite o nome do cliente: ");
-        nomeDoCliente = scanner.nextLine();
+        setNome(scanner.nextLine());
         System.out.print("Digite o número do cliente: ");
-        numDoCliente = scanner.nextLine();
-        System.out.println("Nome do cliente é: " + nomeDoCliente);
-        System.out.println("Numero: " + numDoCliente);
+        setNumero(scanner.nextLine());
+        System.out.println("Nome do cliente é: " + getNome());
+        System.out.println("Numero: " + getNumero());
+    }
+    public void exibirClienteComDesconto(int desconto, boolean fidelidade, int quantidadeVisitas) {
+        setDesconto(desconto);
+        setFidelidade(fidelidade);
+        setQuantidadeVisitas(quantidadeVisitas);
+        System.out.println("Desconto: " + getDesconto() + "%");
+        System.out.println("Fidelidade: " + (isFidelidade() ? "Sim" : "Não"));
+        System.out.println("Quantidade de visitas: " + getQuantidadeVisitas());
+
     }
 }
