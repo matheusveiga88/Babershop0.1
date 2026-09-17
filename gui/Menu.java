@@ -9,6 +9,7 @@ import model.Agendar;
 public class Menu {
 
     Scanner scanner = new Scanner(System.in);
+
     Servicos servicos = new Servicos();
     Cliente cliente = new Cliente();
     Agendar agendar = new Agendar();
@@ -38,7 +39,7 @@ public class Menu {
                     cliente.exibirCliente("Matheus Veiga de Souza", "11958880711");
                     break;
                 case 3:
-                    agendar.agendarcliente();
+                    agendar.agendarcliente(scanner);
                     break;
                 case 0:
                     System.out.println("SAINDO...");

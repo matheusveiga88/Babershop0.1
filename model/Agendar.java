@@ -4,38 +4,27 @@ import java.util.Scanner;
 
 public class Agendar {
 
-    Scanner scanner = new Scanner(System.in);
-
     private String agendarnome;
     private String agendarnumero;
-
-    
+    private String agendarservico;
 
     public String getAgendarnome() {
         return agendarnome;
     }
 
-
-
     public void setAgendarnome(String agendarnome) {
         this.agendarnome = agendarnome;
     }
-
-
 
     public String getAgendarnumero() {
         return agendarnumero;
     }
 
-
-
     public void setAgendarnumero(String agendarnumero) {
         this.agendarnumero = agendarnumero;
     }
 
-
-
-    public void agendarcliente() {
+    public void agendarcliente(Scanner scanner) {
         System.out.print("Digite o nome do cliente: ");
         agendarnome = scanner.nextLine();
         System.out.print("Digite o numero do cliente: ");
