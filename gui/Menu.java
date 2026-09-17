@@ -23,10 +23,10 @@ public class Menu {
             System.out.println("            \u001B[1;\u001B[31mBaberShop\u001B[0m");
             System.out.println("**********************************");
             System.out.println("Escola a opçao:");
-            System.out.println("1- Serviços");
-            System.out.println("2- Clientes");
-            System.out.println("3- Agendar");
-            System.out.println("0- Sair");
+            System.out.println("1- Serviços do Salão");
+            System.out.println("2- Clientes Cadastrados");
+            System.out.println("3- Agendar Cliente");
+            System.out.println("0- Sair do Programa");
             contadormenu = scanner.nextInt();
             scanner.nextLine();
 
