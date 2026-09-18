@@ -1,4 +1,5 @@
 package model;
+import java.util.Scanner;
 
 public class Cliente {
     private String nomeDoCliente;
@@ -20,10 +21,12 @@ public class Cliente {
         this.numDoCliente = numDoCliente;
     }
 
-    public void exibirCliente(String nomedoCliente, String numDoCliente) {
-        this.nomeDoCliente = nomedoCliente;
-        this.numDoCliente = numDoCliente;
-        System.out.println("Nome do cliente é: " + nomedoCliente);
+    public void exibirCliente(Scanner scanner) {
+        System.out.print("Digite o nome do cliente: ");
+        nomeDoCliente = scanner.nextLine();
+        System.out.print("Digite o número do cliente: ");
+        numDoCliente = scanner.nextLine();
+        System.out.println("Nome do cliente é: " + nomeDoCliente);
         System.out.println("Numero: " + numDoCliente);
     }
 }

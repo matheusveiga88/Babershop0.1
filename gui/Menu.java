@@ -36,7 +36,7 @@ public class Menu {
                     servicos.novoServico("Corte de Cabelo", 25.90, 60);
                     break;
                 case 2:
-                    cliente.exibirCliente("Matheus Veiga de Souza", "11958880711");
+                    cliente.exibirCliente(scanner);
                     break;
                 case 3:
                     agendar.agendarcliente(scanner);
