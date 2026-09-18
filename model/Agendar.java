@@ -6,7 +6,6 @@ public class Agendar {
 
     private String agendarnome;
     private String agendarnumero;
-    private String agendarservico;
 
     public String getAgendarnome() {
         return agendarnome;
