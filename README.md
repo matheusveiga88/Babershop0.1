@@ -1,3 +1,5 @@
+<img width="630" height="596" alt="image" src="https://github.com/user-attachments/assets/ae5588e9-2065-4886-8e51-4840240a8f1f" />
+
 # BarberShop 💈
 
 Sistema de gerenciamento para barbearias desenvolvido em **Java**. O projeto utiliza os conceitos de Orientação a Objetos (POO), encapsulamento, herança e organização de pacotes para simular o fluxo de atendimento de clientes, agendamento de horários, cadastro de barbeiros afiliados e definição de serviços.
