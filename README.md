@@ -1,4 +1,5 @@
-<img width="630" height="596" alt="image" src="https://github.com/user-attachments/assets/ae5588e9-2065-4886-8e51-4840240a8f1f" />
+<img width="625" height="511" alt="image" src="https://github.com/user-attachments/assets/2223512c-287d-4410-be5a-38e51d4b1a00" />
+
 
 # BarberShop 💈
 
