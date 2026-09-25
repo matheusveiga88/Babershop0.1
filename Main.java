@@ -1,10 +1,14 @@
-import gui.Menu;
+//import gui.Menu;
+import gui.MenuGrafico;
 
 public class Main {
     public static void main(String[] args) {
 
-        Menu menu = new Menu();
+        //Menu menu = new Menu();
 
-        menu.menuprincipal();
+        //menu.menuprincipal();
+
+         MenuGrafico menuVisual = new MenuGrafico();
+        menuVisual.iniciar();
     }
 }
