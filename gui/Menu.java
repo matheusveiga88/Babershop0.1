@@ -11,11 +11,10 @@ public class Menu {
 
     Scanner scanner = new Scanner(System.in);
 
-    Servicos servicos = new Servicos();
-    Cliente cliente = new Cliente();
+    Servicos servicos = new Servicos("Corte de cabelo",35.90,60);
+    Cliente cliente = new Cliente(10, true, 5);
     Agendar agendar = new Agendar();
-    Barbeiros barbeiros = new Barbeiros();
-
+    Barbeiros barbeiros = new Barbeiros("Reyzon Hugo Polaquine", "99-99999-9999", "Corte infantil",10,1,3000.00);
     private int contadormenu = -1;
 
     public void menuprincipal() {
@@ -36,18 +35,19 @@ public class Menu {
 
             switch (contadormenu) {
                 case 1:
-                    servicos.novoServico("Corte de Cabelo", 25.90, 60);
+                    servicos.novoServico();
+                    
                     break;
                 case 2:
                     cliente.exibirCliente(scanner);
-                    cliente.exibirClienteComDesconto(10, true, 5);
+                    cliente.exibirClienteComDesconto();
                     break;
                 case 3:
                     agendar.agendarcliente(scanner);
                     break;
                 case 4:
-                    barbeiros.exibirAfiliados("Reyzon Hugo Polaquine", "99-99999-9999", "Corte infantil");
-                    barbeiros.exibirdetalhesprofssionais(5, 3000.0, 1);
+                    barbeiros.exibirAfiliados();
+                    barbeiros.exibirdetalhesprofssionais();
                     break;
                 case 0:
                     System.out.println("SAINDO...");

@@ -2,8 +2,14 @@ package model;
 
 public class Servicos {
     private String servico;
-    private Double valor;
+    private double valor;
     private double tempoServico;
+
+    public Servicos(String servico,Double valor, double tempodeservico) {
+        this.servico = servico;
+        this.valor = valor;
+        this.tempoServico = tempodeservico;
+    }
 
     public String getServico() {
         return servico;
@@ -29,10 +35,7 @@ public class Servicos {
         return tempoServico;
     }
 
-public void novoServico(String nome, double valor, double  tempodeservico) {
-        this.servico = nome;
-        this.valor = valor;
-        this.tempoServico = tempodeservico;
+public void novoServico() {
         System.out.println("Serviço: " + this.servico + "\nValor: R$" + this.valor + "\nTempo de serviço: " + this.tempoServico + " minutos");
         }
 

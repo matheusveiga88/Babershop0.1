@@ -5,7 +5,15 @@ public class Cliente extends Pessoas {
     private int desconto;
     private boolean fidelidade;
     private int quantidadeVisitas = 0;
+    
+    
+    public Cliente(int desconto,boolean fidelidade,int quantidadeVisitas) {
+        super(null, null);
+        this.desconto = desconto;
+        this.fidelidade = fidelidade;
+        this.quantidadeVisitas = quantidadeVisitas;
 
+    }
     
     public int getDesconto() {
         return desconto;
@@ -51,10 +59,8 @@ public class Cliente extends Pessoas {
         System.out.println("Nome do cliente é: " + getNome());
         System.out.println("Numero: " + getNumero());
     }
-    public void exibirClienteComDesconto(int desconto, boolean fidelidade, int quantidadeVisitas) {
-        setDesconto(desconto);
-        setFidelidade(fidelidade);
-        setQuantidadeVisitas(quantidadeVisitas);
+    public void exibirClienteComDesconto() {
+        
         System.out.println("Desconto: " + getDesconto() + "%");
         System.out.println("Fidelidade: " + (isFidelidade() ? "Sim" : "Não"));
         System.out.println("Quantidade de visitas: " + getQuantidadeVisitas());
